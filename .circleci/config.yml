@@ -3,6 +3,6 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:latest
+      - image: cimg/node:stable
     steps:
       - run: git clone --depth 5 "$CIRCLE_REPOSITORY_URL" --branch "$CIRCLE_BRANCH"
